@@ -1,6 +1,8 @@
 // Assignment code here
 var passLength = 8;
 var allArray = [];
+
+
 var numb = "0123456789";
 var stringyLow = "abcdefghijklmnopqrstuvwxyz";
 var stringUp = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -52,7 +54,7 @@ function generatePassword() {
 function userPrompts() {
   allArray = [];
   
-  var passLength = parseInt(prompt ("How many characters would you like your password to contain? Must be between 8 and 128 digits."));
+   passLength = parseInt(prompt ("How many characters would you like your password to contain? Must be between 8 and 128 digits."));
   
   if (isNaN(passLength) || passLength < 8 || passLength > 128){
     alert ("Password length must be an integer, between 8 and 128 digits. Please try again.");
